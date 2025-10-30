@@ -1,0 +1,19 @@
+const aName = prompt("Type your full name: ");
+const numLetters = aName.length;
+const secondLetter = aName.slice(1, 2); // aName[1]
+const firstIndexA = aName.indexOf("a");
+const lastIndexA = aName.lastIndexOf("a");
+const lastThreeLetters = aName.slice(-3);
+const nameWords = aName.split(" ");
+const upperName = aName.toUpperCase();
+const lowerName = aName.toLowerCase();
+
+document.body.innerHTML += `Your name is <strong>${aName}</strong> <br>`;
+document.body.innerHTML += `Your name has <strong>${numLetters}</strong> characters <br>`;
+document.body.innerHTML += `The second letter of your name is <strong>'${secondLetter}'</strong> <br>`;
+document.body.innerHTML += `The first index of letter 'a' in your name is <strong>${firstIndexA}</strong> <br>`;
+document.body.innerHTML += `The last index of letter 'a' in your name is <strong>${lastIndexA}</strong> <br>`;
+document.body.innerHTML += `The last 3 letter in your name are <strong>'${lastThreeLetters}'</strong> <br>`;
+document.body.innerHTML += `The words of your name are <strong>'${nameWords[0]}'</strong>, <strong>'${nameWords[1]}'</strong> and <strong>'${nameWords[2]}'</strong> <br>`;
+document.body.innerHTML += `Your name in uppercase is <strong>'${upperName}'</strong> <br>`;
+document.body.innerHTML += `Your name in lowercase is <strong>'${lowerName}'</strong> <br>`;
