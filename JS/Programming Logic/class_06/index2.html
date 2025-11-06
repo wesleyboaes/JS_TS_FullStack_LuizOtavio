@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculate</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+
+        <h1>BMI Table</h1>
+
+        <h2>BMI</h2>
+
+        <p>Less than 18.5</p>
+        <p>Between 18.5 and 24.9</p>
+        <p>Between 25 and 29.9</p>
+        <p>Between 30 and 34.9</p>
+        <p>Between 35 and 39.9</p>
+        <p>Greater than 40</p>
+
+        <h2>Result</h2>
+
+        <p>Low weigh</p>
+        <p>Normal weigh</p>
+        <p>Overweigh</p>
+        <p>Grade one Obesity</p>
+        <p>Grade two Obesity</p>
+        <p>Grade three Obesity</p>
+
+        <h1>Calculate your BMI</h1>
+
+        <form action="/" id="form" method="POST">
+            <label for="label-weigh">Weigh:</label>
+            <input type="text" id="input-weigh" name="input-weigh">
+
+            <label for="label-heigh">Heigh:</label>
+            <input type="text" id="input-heigh" name="input-heigh">
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <script src="assets/js/mainTeacher.js"></script>
+</body>
+
+</html>
